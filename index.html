@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Valentina España | Financial Professional</title>
+<meta name="description" content="Protection and insurance-based wealth strategies for business owners, incorporated professionals and families in Alberta, BC and Ontario. Keep more of what you build.">
+<meta property="og:title" content="Valentina España | Financial Professional">
+<meta property="og:description" content="Protect your income, your business and your family. Keep more of what you build.">
+<meta property="og:type" content="website">
+<!-- REPLACE: og:image (1200x630) -->
+<meta property="og:image" content="">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230A0A0A'/><text x='32' y='44' font-size='32' text-anchor='middle' fill='%23D4AF37' font-family='Georgia' font-style='italic'>VE</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main"><span data-l="en">Skip to content</span><span data-l="es">Ir al contenido</span></a>
+
+<!-- ================= HEADER ================= -->
+<header id="hdr">
+  <div class="wrap">
+    <a href="#" class="logo">Valentina España<small><span data-l="en">Financial Professional</span><span data-l="es">Profesional Financiera</span></small></a>
+    <nav aria-label="Main">
+      <ul id="menu">
+        <li><a href="#strategies"><span data-l="en">Strategies</span><span data-l="es">Estrategias</span></a></li>
+        <li><a href="#process"><span data-l="en">Process</span><span data-l="es">Proceso</span></a></li>
+        <li><a href="#calculator"><span data-l="en">Calculator</span><span data-l="es">Calculadora</span></a></li>
+        <li><a href="#about"><span data-l="en">About</span><span data-l="es">Sobre mí</span></a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" id="btn-en" aria-pressed="true" onclick="setLang('en')">EN</button>
+        <button type="button" id="btn-es" aria-pressed="false" onclick="setLang('es')">ES</button>
+      </div>
+      <a href="#start" class="btn nav-cta"><span data-l="en">Book a session</span><span data-l="es">Agenda tu sesión</span></a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="toggleMenu(this)">☰</button>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<section class="hero cine">
+  <div class="orb a"></div><div class="orb b"></div>
+  <div class="grid-lines"></div>
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="eyebrow fade-up"><span data-l="en">Financial Professional · Canada</span><span data-l="es">Profesional Financiera · Canadá</span></span>
+      <h1>
+        <span data-l="en"><span class="line"><span>Keep more of</span></span><span class="line"><span>what you <em class="gold-text">build.</em></span></span></span>
+        <span data-l="es"><span class="line"><span>Conserva más de</span></span><span class="line"><span>lo que <em class="gold-text">construyes.</em></span></span></span>
+      </h1>
+      <p class="hero-sub fade-up d2"><span data-l="en">Protection and insurance-based strategies for business owners, incorporated professionals and families.</span><span data-l="es">Protección y estrategias con seguros para dueños de negocio, profesionales incorporados y familias.</span></p>
+      <div class="ctas fade-up d3">
+        <span class="cta-me"><img src="assets/img/valentina-avatar.webp" alt="Valentina España"><a href="#start" class="btn"><span data-l="en">Book a private session</span><span data-l="es">Agenda una sesión privada</span><span class="arr">→</span></a></span>
+        <a href="#strategies" class="btn ghost"><span data-l="en">Explore the strategies</span><span data-l="es">Explora las estrategias</span><span class="arr">→</span></a>
+      </div>
+      <p class="me-line fade-up d3">Valentina España <i></i> <span data-l="en">Financial Professional</span><span data-l="es">Profesional Financiera</span> <i></i> English · Español</p>
+    </div>
+    <div class="hero-viz fade-up d2" aria-label="Hypothetical example comparing taxed and tax-sheltered growth">
+      <div class="hv-top">
+        <div><span class="hv-k"><span data-l="en">Same savings. Different structure.</span><span data-l="es">El mismo ahorro. Otra estructura.</span></span>
+          <p class="hv-ex" id="hv-ex"></p></div>
+        <div class="hv-mode" role="group"><button type="button" data-hv="pers" aria-pressed="true"><span data-l="en">Personal</span><span data-l="es">Personal</span></button><button type="button" data-hv="corp" aria-pressed="false"><span data-l="en">Corporate</span><span data-l="es">Corporativo</span></button></div>
+      </div>
+      <svg class="hv-chart" id="hv-chart" viewBox="0 0 520 230" role="img" aria-hidden="true"></svg>
+      <div class="hv-nums">
+        <div><small><i style="background:var(--emerald-2)"></i><span data-l="en">Taxed every year</span><span data-l="es">Pagando impuestos cada año</span></small><strong id="hv-a">$0</strong></div>
+        <div><small><i style="background:var(--gold)"></i><span data-l="en">Tax-sheltered growth</span><span data-l="es">Crecimiento protegido de impuestos</span></small><strong id="hv-b" class="gold-text">$0</strong></div>
+        <div class="hv-gap"><small><span data-l="en">You could keep</span><span data-l="es">Podrías conservar</span></small><strong id="hv-g">+$0</strong></div>
+      </div>
+      <p class="hv-fine"><span data-l="en">Hypothetical illustration with the same return before tax in both cases. Excludes product costs and fees; not a projection of any product.</span><span data-l="es">Ilustración hipotética con el mismo rendimiento antes de impuestos en ambos casos. No incluye costos de productos ni comisiones; no es una proyección de ningún producto.</span> <a href="#calculator"><span data-l="en">Try your numbers →</span><span data-l="es">Prueba tus números →</span></a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MARQUEE ================= -->
+<div class="marquee" aria-hidden="true">
+  <div class="track" id="mq"><span>Corporate Surplus</span><span>Capital Dividend Account</span><span>Immediate Financing Arrangement</span><span>Buy-Sell Funding</span><span>Key Person</span><span>Estate Freeze</span><span>Legacy Protection</span><span>Critical Illness</span><span>Corporate Surplus</span><span>Capital Dividend Account</span><span>Immediate Financing Arrangement</span><span>Buy-Sell Funding</span><span>Key Person</span><span>Estate Freeze</span><span>Legacy Protection</span><span>Critical Illness</span></div>
+</div>
+
+<!-- ================= STRATEGIES ================= -->
+<section id="strategies" style="background:var(--black-2)">
+  <div class="wrap center">
+    <div class="rv">
+      <span class="eyebrow"><span data-l="en">Strategies</span><span data-l="es">Estrategias</span></span>
+      <h2><span data-l="en">Built for those who <em class="gold-text">build</em></span><span data-l="es">Para quienes <em class="gold-text">construyen</em></span></h2>
+      <p class="lead"><span data-l="en">Every plan is designed around your goals and your timeline. Choose the one that describes you.</span><span data-l="es">Cada plan se diseña según tus metas y tus tiempos. Elige la opción que te describe.</span></p>
+    </div>
+    <div class="tabs rv" role="tablist">
+      <button class="tab" role="tab" aria-selected="false" data-tab="corp"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M5 21V5l7-3 7 3v16M9 9h1M14 9h1M9 13h1M14 13h1M10 21v-4h4v4"/></svg></span><span class="tt"><span data-l="en">Corporations</span><span data-l="es">Corporaciones</span></span><span class="sb"><span data-l="en">Retained earnings, tax-efficient growth and succession.</span><span data-l="es">Utilidades retenidas, crecimiento con eficiencia fiscal y sucesión.</span></span><span class="go"><span data-l="en">Explore strategies</span><span data-l="es">Ver estrategias</span> <i>→</i></span></button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="owner"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></svg></span><span class="tt"><span data-l="en">Business Owners</span><span data-l="es">Empresarios</span></span><span class="sb"><span data-l="en">Partners, key people and your own income.</span><span data-l="es">Socios, personas clave y tu propio ingreso.</span></span><span class="go"><span data-l="en">Explore strategies</span><span data-l="es">Ver estrategias</span> <i>→</i></span></button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="family"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7M5 10v10h14V10"/><path d="M12 18s-3-1.8-3-3.8a1.6 1.6 0 0 1 3-.8 1.6 1.6 0 0 1 3 .8c0 2-3 3.8-3 3.8z"/></svg></span><span class="tt"><span data-l="en">Families</span><span data-l="es">Familias</span></span><span class="sb"><span data-l="en">Protection, legacy and peace of mind.</span><span data-l="es">Protección, legado y tranquilidad.</span></span><span class="go"><span data-l="en">Explore strategies</span><span data-l="es">Ver estrategias</span> <i>→</i></span></button>
+    </div>
+    <div class="cards" id="cards" style="text-align:left"></div>
+  </div>
+</section>
+
+<!-- ================= CORPORATE INSIGHT (only visible on the Corporations tab) ================= -->
+<section id="corp-insight" style="background:var(--black-2);padding-top:0" hidden>
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow"><span data-l="en">The hidden cost</span><span data-l="es">El costo oculto</span></span>
+      <h2><span data-l="en">Your corporation is profitable.<br><em class="gold-text">Is it efficient?</em></span><span data-l="es">Tu corporación es rentable.<br><em class="gold-text">¿Es eficiente?</em></span></h2>
+      <p class="lead"><span data-l="en">Money sitting in a corporation can be taxed at around 50% on passive growth — and too much of it can shrink your small business deduction. The right structure changes the math.</span><span data-l="es">El dinero que se queda en una corporación puede pagar alrededor de 50% de impuestos sobre su crecimiento pasivo, y si es demasiado puede reducir tu deducción para pequeñas empresas. La estructura correcta cambia los números.</span></p>
+    </div>
+    <div class="stats">
+      <div class="stat rv"><div class="num gold-text">~<span class="count" data-to="50">0</span>%</div><p><span data-l="en">Approximate corporate tax rate on passive investment income (varies by province).</span><span data-l="es">Tasa aproximada de impuesto corporativo sobre ingresos pasivos (varía por provincia).</span></p></div>
+      <div class="stat rv d1"><div class="num gold-text">$<span class="count" data-to="50">0</span>K</div><p><span data-l="en">Passive income above this level can start reducing your small business deduction.</span><span data-l="es">Ingresos pasivos por encima de este nivel empiezan a reducir la deducción para pequeñas empresas.</span></p></div>
+      <div class="stat rv d2"><div class="num gold-text">$0</div><p><span data-l="en">Capital dividends paid from a Capital Dividend Account can generally be received tax-free.</span><span data-l="es">Los dividendos de capital pagados desde una Cuenta de Dividendos de Capital generalmente se pueden recibir libres de impuestos.</span></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHO / QUOTE ================= -->
+<section class="emerald-band">
+  <div class="wrap split">
+    <div class="rv">
+      <span class="eyebrow"><span data-l="en">Who I work with</span><span data-l="es">Con quién trabajo</span></span>
+      <h2><span data-l="en">For owners who think <em class="gold-text">in decades.</em></span><span data-l="es">Para dueños que piensan <em class="gold-text">en décadas.</em></span></h2>
+      <ul class="checks">
+        <li><span data-l="en">Incorporated business owners with retained earnings</span><span data-l="es">Empresarios incorporados con utilidades retenidas</span></li>
+        <li><span data-l="en">Incorporated professionals — doctors, dentists, lawyers, engineers</span><span data-l="es">Profesionales incorporados — médicos, dentistas, abogados, ingenieros</span></li>
+        <li><span data-l="en">Partners who need their shareholder agreements funded</span><span data-l="es">Socios que necesitan respaldar su acuerdo de accionistas</span></li>
+        <li><span data-l="en">Families planning to transfer wealth to the next generation</span><span data-l="es">Familias que planean transferir su patrimonio a la siguiente generación</span></li>
+      </ul>
+    </div>
+    <div class="glass rv d2" style="padding:48px">
+      <p class="quote-big"><span data-l="en">“Wealth isn't what you earn. It's what you keep, protect and pass on.”</span><span data-l="es">“La riqueza no es lo que ganas. Es lo que conservas, proteges y dejas a los tuyos.”</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROCESS ================= -->
+<section id="process">
+  <div class="wrap">
+    <div class="rv center">
+      <span class="eyebrow"><span data-l="en">The process</span><span data-l="es">El proceso</span></span>
+      <h2><span data-l="en">Clarity in <em class="gold-text">four steps</em></span><span data-l="es">Claridad en <em class="gold-text">cuatro pasos</em></span></h2>
+    </div>
+    <div class="timeline rv" id="tl">
+      <div class="bar"></div>
+      <div class="tstep"><div class="dot">I</div><h3><span data-l="en">Discover</span><span data-l="es">Descubrir</span></h3><p><span data-l="en">A private session to understand you and your goals, whether it's your business, your career or your family.</span><span data-l="es">Una sesión privada para entenderte a ti y tus metas, ya sea tu negocio, tu carrera o tu familia.</span></p></div>
+      <div class="tstep"><div class="dot">II</div><h3><span data-l="en">Analyze</span><span data-l="es">Analizar</span></h3><p><span data-l="en">We map your risks, coverage gaps and opportunities.</span><span data-l="es">Identificamos riesgos, brechas de cobertura y oportunidades.</span></p></div>
+      <div class="tstep"><div class="dot">III</div><h3><span data-l="en">Design</span><span data-l="es">Diseñar</span></h3><p><span data-l="en">A tailored strategy, coordinated with your accountant and lawyer.</span><span data-l="es">Una estrategia a tu medida, coordinada con tu contador y abogado.</span></p></div>
+      <div class="tstep"><div class="dot">IV</div><h3><span data-l="en">Evolve</span><span data-l="es">Evolucionar</span></h3><p><span data-l="en">Annual reviews as your business and life change.</span><span data-l="es">Revisiones anuales a medida que tu vida y negocio cambian.</span></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CALCULATOR ================= -->
+<section id="calculator" style="background:var(--black-2)">
+  <div class="wrap">
+    <div class="rv center">
+      <span class="eyebrow"><span data-l="en">Tax drag calculator</span><span data-l="es">Calculadora de impuestos</span></span>
+      <h2><span data-l="en">What is tax costing <em class="gold-text">your growth?</em></span><span data-l="es">¿Cuánto le cuestan los impuestos <em class="gold-text">a tu crecimiento?</em></span></h2>
+      <p class="lead"><span data-l="en">Compare money taxed every year against tax-advantaged growth at the same return.</span><span data-l="es">Compara dinero que paga impuestos cada año contra crecimiento con ventaja fiscal, con el mismo rendimiento.</span></p>
+    </div>
+    <div class="calc rv">
+      <div class="glass">
+        <div class="mode" role="group" aria-label="Mode">
+          <button type="button" id="m-corp" aria-pressed="true" onclick="setMode('corp')"><span data-l="en">Corporate surplus</span><span data-l="es">Excedente corporativo</span></button>
+          <button type="button" id="m-pers" aria-pressed="false" onclick="setMode('pers')"><span data-l="en">Personal savings</span><span data-l="es">Ahorro personal</span></button>
+        </div>
+        <p class="fine" style="margin:-18px 0 24px"><span data-l="en">Not sure what to enter? Hover or tap the <b style="color:var(--gold)">?</b> next to each item. You can drag the slider or type the exact number.</span><span data-l="es">¿No sabes qué poner? Pasa el mouse o toca el <b style="color:var(--gold)">?</b> junto a cada dato. Puedes mover la barra o escribir el número exacto.</span></p>
+        <div class="slider"><div class="top"><span><span data-l="en">Amount today</span><span data-l="es">Monto hoy</span><span class="tipwrap"><button type="button" class="info" aria-label="What does this mean?">?</button><span class="tip" role="tooltip"><span data-l="en">Money you already have saved or invested today. For a corporation, use the retained earnings invested inside the company (GICs, funds, etc.).</span><span data-l="es">El dinero que ya tienes ahorrado o invertido hoy. Para una corporación, usa las utilidades retenidas que están invertidas dentro de la empresa (GICs, fondos, etc.).</span></span></span></span><input class="num-in" id="o-p0" type="text" inputmode="decimal" aria-label="Amount today"></div><input type="range" id="c-p0" min="0" max="2000000" step="10000" value="250000" aria-label="Amount today"></div>
+        <div class="slider"><div class="top"><span><span data-l="en">Added each year</span><span data-l="es">Aporte anual</span><span class="tipwrap"><button type="button" class="info" aria-label="What does this mean?">?</button><span class="tip" role="tooltip"><span data-l="en">How much more you expect to save, or leave in the corporation, every year.</span><span data-l="es">Cuánto más esperas ahorrar, o dejar dentro de la corporación, cada año.</span></span></span></span><input class="num-in" id="o-add" type="text" inputmode="decimal" aria-label="Added each year"></div><input type="range" id="c-add" min="0" max="300000" step="2500" value="50000" aria-label="Added each year"></div>
+        <div class="slider"><div class="top"><span><span data-l="en">Years</span><span data-l="es">Años</span><span class="tipwrap"><button type="button" class="info" aria-label="What does this mean?">?</button><span class="tip" role="tooltip"><span data-l="en">How long the money will stay invested before you need it.</span><span data-l="es">Cuánto tiempo estará invertido el dinero antes de que lo necesites.</span></span></span></span><input class="num-in" id="o-yrs" type="text" inputmode="decimal" aria-label="Years"></div><input type="range" id="c-yrs" min="5" max="40" step="1" value="20" aria-label="Years"></div>
+        <div class="slider"><div class="top"><span><span data-l="en">Assumed annual return</span><span data-l="es">Rendimiento anual supuesto</span><span class="tipwrap"><button type="button" class="info" aria-label="What does this mean?">?</button><span class="tip" role="tooltip"><span data-l="en">The average yearly growth you expect before taxes. 4–6% is a common conservative assumption. It's an example, not a promise.</span><span data-l="es">El crecimiento promedio por año que esperas antes de impuestos. 4–6% es un supuesto conservador común. Es un ejemplo, no una promesa.</span></span></span></span><input class="num-in" id="o-ret" type="text" inputmode="decimal" aria-label="Assumed annual return"></div><input type="range" id="c-ret" min="2" max="9" step="0.25" value="6" aria-label="Assumed annual return"></div>
+        <div class="slider"><div class="top"><span><span data-l="en">Tax rate on growth</span><span data-l="es">Impuesto sobre el crecimiento</span><span class="tipwrap"><button type="button" class="info" aria-label="What does this mean?">?</button><span class="tip" role="tooltip"><span data-l="en">The share of each year's growth that goes to tax. Passive investment income inside a corporation is taxed at around 50% (varies by province). For personal savings outside a TFSA or RRSP, use your own tax rate (often 20–50%).</span><span data-l="es">La parte del crecimiento de cada año que se va en impuestos. El ingreso pasivo dentro de una corporación paga alrededor de 50% (varía por provincia). Para ahorro personal fuera de un TFSA o RRSP, usa tu propia tasa de impuestos (a menudo 20–50%).</span></span></span></span><input class="num-in" id="o-tax" type="text" inputmode="decimal" aria-label="Tax rate on growth"></div><input type="range" id="c-tax" min="0" max="55" step="0.5" value="50" aria-label="Tax rate on growth"></div>
+        <p class="fine"><span data-l="en">Hypothetical illustration. Assumes the same gross return in both scenarios and does not include product costs, fees, refundable taxes or withdrawal taxes. Not a projection of any specific product.</span><span data-l="es">Ilustración hipotética. Supone el mismo rendimiento bruto en ambos escenarios y no incluye costos de productos, comisiones, impuestos reembolsables ni impuestos al retirar. No es una proyección de ningún producto específico.</span></p>
+      </div>
+      <div class="glass">
+        <div class="res">
+          <div><small><span data-l="en">Taxed yearly</span><span data-l="es">Gravado cada año</span><span class="tipwrap"><button type="button" class="info" aria-label="What does this mean?">?</button><span class="tip" role="tooltip"><span data-l="en">What you would have left after paying tax on the growth every year, like a regular investment account or investments held inside a corporation.</span><span data-l="es">Lo que te quedaría después de pagar impuestos sobre el crecimiento cada año, como en una cuenta de inversión normal o inversiones dentro de una corporación.</span></span></span></small><strong id="r-tax"></strong></div>
+          <div><small><span data-l="en">Tax-advantaged</span><span data-l="es">Con ventaja fiscal</span><span class="tipwrap"><button type="button" class="info" aria-label="What does this mean?">?</button><span class="tip" role="tooltip"><span data-l="en">What you could have with a tax-sheltered structure, where growth isn't taxed year after year (for example, inside an exempt life insurance policy).</span><span data-l="es">Lo que podrías tener con una estructura protegida fiscalmente, donde el crecimiento no paga impuestos año tras año (por ejemplo, dentro de una póliza de seguro de vida exenta).</span></span></span></small><strong id="r-shel"></strong></div>
+          <div class="hl"><small><span data-l="en">Tax drag</span><span data-l="es">Lo que pierdes</span><span class="tipwrap"><button type="button" class="info" aria-label="What does this mean?">?</button><span class="tip" role="tooltip"><span data-l="en">The difference between both scenarios: what taxes could take from your growth over time.</span><span data-l="es">La diferencia entre los dos escenarios: lo que los impuestos podrían quitarle a tu crecimiento con el tiempo.</span></span></span></small><strong id="r-gap"></strong></div>
+        </div>
+        <svg class="chart" id="chart" viewBox="0 0 600 300" role="img" aria-label="Growth comparison chart"></svg>
+        <div class="k" style="margin-top:6px"><span><i style="background:var(--gold)"></i><span data-l="en">Tax-advantaged</span><span data-l="es">Con ventaja fiscal</span></span><span><i style="background:var(--emerald-2)"></i><span data-l="en">Taxed yearly</span><span data-l="es">Gravado cada año</span></span></div>
+        <div class="callout" id="calc-msg"></div>
+        <div style="margin-top:22px"><button class="btn" type="button" onclick="openCalcForm()"><span data-l="en">Get a private analysis of my numbers</span><span data-l="es">Quiero un análisis privado de mis números</span><span class="arr">→</span></button></div>
+        <form data-form="calculator" id="calc-form" hidden style="margin-top:22px" novalidate>
+          <div class="row">
+            <label><span data-l="en">Full name</span><span data-l="es">Nombre completo</span><input name="name" required autocomplete="name"></label>
+            <label><span data-l="en">Email</span><span data-l="es">Correo</span><input name="email" type="email" required autocomplete="email"></label>
+          </div>
+          <div class="row">
+            <label><span data-l="en">Phone</span><span data-l="es">Teléfono</span><input name="phone" type="tel" autocomplete="tel"></label>
+            <label><span data-l="en">Business name (optional)</span><span data-l="es">Empresa (opcional)</span><input name="company" autocomplete="organization"></label>
+          </div>
+          <input type="hidden" name="calculator_results" id="calc-results">
+          <label class="check"><input type="checkbox" name="consent" required><span><span data-l="en">I agree to be contacted by Valentina España about my results and I have read the <a href="#privacy" onclick="openPrivacy()" style="color:var(--gold)">Privacy Policy</a>. I can withdraw consent at any time.</span><span data-l="es">Acepto que Valentina España me contacte sobre mis resultados y leí la <a href="#privacy" onclick="openPrivacy()" style="color:var(--gold)">Política de Privacidad</a>. Puedo retirar mi consentimiento en cualquier momento.</span></span></label>
+          <button class="btn" type="submit"><span data-l="en">Send my numbers</span><span data-l="es">Enviar mis números</span></button>
+          <div class="form-ok"><span data-l="en">Received. I'll review your numbers personally and reach out within 2 business days.</span><span data-l="es">Recibido. Revisaré tus números personalmente y te contactaré en 2 días hábiles.</span></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= QUALIFIER ================= -->
+<section id="start">
+  <div class="wrap">
+    <div class="rv center">
+      <span class="eyebrow"><span data-l="en">Private session</span><span data-l="es">Sesión privada</span></span>
+      <h2><span data-l="en">Let's see if we're <em class="gold-text">a fit</em></span><span data-l="es">Veamos si somos <em class="gold-text">el equipo ideal</em></span></h2>
+      <p class="lead"><span data-l="en">A few quick questions so our time together is focused on you — about 60 seconds.</span><span data-l="es">Unas preguntas rápidas para que nuestra sesión se enfoque en ti, unos 60 segundos.</span></p>
+    </div>
+
+    <div class="glass panel rv" id="quiz" aria-live="polite">
+      <div class="progress"><i id="qbar"></i></div>
+      <div id="qbody"></div>
+      <div class="qnav" id="qnav">
+        <button class="linkbtn" id="qback" type="button" onclick="quizBack()">← <span data-l="en">Back</span><span data-l="es">Atrás</span></button>
+        <button class="btn" id="qnext" type="button" onclick="quizNext()" disabled><span id="qnext-label">Continue</span><span class="arr">→</span></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PLAYBOOK (shown only at #playbook — non-qualified visitors are sent here) ================= -->
+<section id="playbook" hidden>
+  <div class="wrap">
+    <div class="glass panel result" style="margin-top:0">
+      <span class="badge"><span data-l="en">Your free playbook</span><span data-l="es">Tu guía gratuita</span></span>
+      <h3><span data-l="en">The Wealth <em class="gold-text">Foundations</em> Playbook</span><span data-l="es">Guía de <em class="gold-text">Bases</em> Patrimoniales</span></h3>
+      <p class="lead"><span data-l="en">Private planning requires a valid work permit, permanent residence, citizenship or approved protected-person status. Until then, these seven moves put you in control — so you're ready the day you are.</span><span data-l="es">La planificación privada requiere permiso de trabajo vigente, residencia permanente, ciudadanía o estatus de refugiado aprobado. Mientras tanto, estos siete pasos te ponen en control — para que estés listo/a el día que llegue.</span></p>
+      <ol class="play">
+        <li><div><b><span data-l="en">Bank with intention</span><span data-l="es">Organiza tu banco</span></b><span><span data-l="en">One main account for income and bills; separate savings you don't touch.</span><span data-l="es">Una cuenta principal para ingresos y gastos; un ahorro aparte que no tocas.</span></span></div></li>
+        <li><div><b><span data-l="en">Build credit deliberately</span><span data-l="es">Construye tu crédito</span></b><span><span data-l="en">Use under 30% of your limit and pay in full every month.</span><span data-l="es">Usa menos del 30% de tu límite y paga el total cada mes.</span></span></div></li>
+        <li><div><b><span data-l="en">Know your numbers</span><span data-l="es">Conoce tus números</span></b><span><span data-l="en">A one-page monthly budget: what comes in, what goes out.</span><span data-l="es">Un presupuesto de una página: lo que entra y lo que sale.</span></span></div></li>
+        <li><div><b><span data-l="en">Create a safety cushion</span><span data-l="es">Crea tu colchón</span></b><span><span data-l="en">Work toward 3–6 months of essential expenses.</span><span data-l="es">Avanza hacia 3 a 6 meses de gastos esenciales.</span></span></div></li>
+        <li><div><b><span data-l="en">File taxes every year</span><span data-l="es">Declara impuestos cada año</span></b><span><span data-l="en">Even with low income — it builds your record and can unlock benefits.</span><span data-l="es">Aunque ganes poco: crea tu historial y puede darte acceso a beneficios.</span></span></div></li>
+        <li><div><b><span data-l="en">Eliminate expensive debt</span><span data-l="es">Elimina deudas caras</span></b><span><span data-l="en">Anything above ~20% interest is an emergency, not a payment plan.</span><span data-l="es">Todo lo que pase de ~20% de interés es una emergencia, no un plan de pagos.</span></span></div></li>
+        <li><div><b><span data-l="en">Learn the toolkit</span><span data-l="es">Aprende las herramientas</span></b><span><span data-l="en">TFSA, RRSP and FHSA — your future engines of growth.</span><span data-l="es">TFSA, RRSP y FHSA — tus futuros motores de crecimiento.</span></span></div></li>
+      </ol>
+      <div class="callout"><span data-l="en"><strong>When your status is approved, come back and book your session.</strong></span><span data-l="es"><strong>Cuando tu estatus sea aprobado, regresa y agenda tu sesión.</strong></span></div>
+      <p style="margin-top:24px"><a href="#" class="btn ghost" onclick="closePlaybook()"><span data-l="en">Back to home</span><span data-l="es">Volver al inicio</span></a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" style="background:var(--black-2)">
+  <div class="wrap split">
+    <!-- REPLACE: <img src="valentina.jpg" alt="Valentina España" style="width:100%;height:100%;object-fit:cover"> inside .photo -->
+    <div class="photo about-photo rv"><img src="assets/img/valentina-about.jpg" alt="Valentina España"></div>
+    <div class="rv d2">
+      <span class="eyebrow"><span data-l="en">About · Valentina España</span><span data-l="es">Sobre mí · Valentina España</span></span>
+      <div class="about-head"><img class="about-mini" src="assets/img/valentina-mini.jpg" alt="Valentina España">
+      <h2><span data-l="en">Built to <em class="gold-text">stand.</em></span><span data-l="es">Hecho para <em class="gold-text">mantenerse.</em></span></h2>
+      </div>
+      <p class="lead" style="margin-bottom:20px"><span data-l="en">In engineering, one small miscalculation can bring down an entire structure. Your finances work the same way.</span><span data-l="es">En ingeniería, un pequeño error de cálculo puede derrumbar toda una estructura. Tus finanzas funcionan igual.</span></p>
+      <p style="color:var(--text)"><span data-l="en">Most people don't see the weak point until the day they need the plan.</span><span data-l="es">La mayoría de las personas no ve el punto débil hasta el día en que necesita el plan.</span></p>
+      <ul class="about-pains">
+        <li><span data-l="en"><b>If you own a business,</b> it probably depends on you more than you think. If you couldn't work for six months, would it keep running?</span><span data-l="es"><b>Si tienes un negocio,</b> probablemente depende de ti más de lo que crees. Si no pudieras trabajar por seis meses, ¿seguiría funcionando?</span></li>
+        <li><span data-l="en"><b>If you're incorporated,</b> your profits may be sitting in the corporation, taxed year after year, with no clear plan to get them out efficiently.</span><span data-l="es"><b>Si estás incorporado,</b> tus ganancias pueden estar quietas en la corporación, pagando impuestos año tras año, sin un plan claro para sacarlas de forma eficiente.</span></li>
+        <li><span data-l="en"><b>If you have a family,</b> the people who count on you could be one hard month away from losing what you've built together.</span><span data-l="es"><b>Si tienes una familia,</b> las personas que cuentan contigo podrían estar a un mes difícil de perder lo que han construido juntos.</span></li>
+      </ul>
+      <p style="color:var(--muted)"><span data-l="en">That's where an engineer's eye makes the difference. We start with your numbers, find the weak points and build a plan that holds, explained in plain language.</span><span data-l="es">Ahí es donde la mirada de una ingeniera marca la diferencia. Empezamos por tus números, encontramos los puntos débiles y construimos un plan que se sostenga, explicado en palabras simples.</span></p>
+      <p class="quote-big" style="font-size:clamp(1.5rem,2.4vw,2rem);margin-top:26px"><span data-l="en">You've built something worth protecting. Let's make sure it stands.</span><span data-l="es">Has construido algo que vale la pena proteger. Asegurémonos de que se mantenga en pie.</span></p>
+      <div class="chips"><span><span data-l="en">Engineer by training</span><span data-l="es">Ingeniera de formación</span></span><span>Financial Professional</span><span>English · Español</span></div>
+      <a href="#start" class="btn" style="margin-top:30px"><span data-l="en">Let's talk</span><span data-l="es">Hablemos</span><span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= REFERRAL ================= -->
+<section id="refer">
+  <div class="wrap split">
+    <div class="rv">
+      <span class="eyebrow"><span data-l="en">Referrals</span><span data-l="es">Referidos</span></span>
+      <h2><span data-l="en">Know someone <em class="gold-text">who should see this?</em></span><span data-l="es">¿Conoces a alguien <em class="gold-text">que necesite esto?</em></span></h2>
+      <p class="lead"><span data-l="en">A business owner, a professional, a family: the most valuable introduction is a conversation. Please make sure they're happy to hear from me.</span><span data-l="es">Un dueño de negocio, un profesional, una familia: la introducción más valiosa es una conversación. Asegúrate de que esté de acuerdo en que lo/la contacte.</span></p>
+    </div>
+    <div class="glass rv d2" style="padding:38px">
+      <form data-form="referral" novalidate>
+        <div class="row">
+          <label><span data-l="en">Your name</span><span data-l="es">Tu nombre</span><input name="referrer_name" required></label>
+          <label><span data-l="en">Your email</span><span data-l="es">Tu correo</span><input name="referrer_email" type="email" required></label>
+        </div>
+        <div class="row">
+          <label><span data-l="en">Their name</span><span data-l="es">Su nombre</span><input name="friend_name" required></label>
+          <label><span data-l="en">Their phone or email</span><span data-l="es">Su teléfono o correo</span><input name="friend_contact" required></label>
+        </div>
+        <label class="check"><input type="checkbox" name="consent" required><span><span data-l="en">They agreed to be contacted.</span><span data-l="es">Aceptó ser contactado/a.</span></span></label>
+        <button class="btn" type="submit"><span data-l="en">Send introduction</span><span data-l="es">Enviar recomendación</span></button>
+        <div class="form-ok"><span data-l="en">Thank you for your trust.</span><span data-l="es">Gracias por tu confianza.</span></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section id="faq" style="background:var(--black-2)">
+  <div class="wrap" style="max-width:900px">
+    <div class="rv center" style="margin-bottom:40px"><span class="eyebrow">FAQ</span><h2><span data-l="en">Questions, <em class="gold-text">answered</em></span><span data-l="es">Tus preguntas, <em class="gold-text">resueltas</em></span></h2></div>
+    <div class="rv">
+      <details><summary><span data-l="en">Do I need to be incorporated?</span><span data-l="es">¿Necesito tener una empresa?</span></summary><p><span data-l="en">No. Corporate strategies are my focus, but I also work with professionals and families on protection, cash-value life insurance and legacy.</span><span data-l="es">No. Mi enfoque son las estrategias corporativas, pero también trabajo con profesionales y familias en protección, seguros con valor en efectivo y legado.</span></p></details>
+      <details><summary><span data-l="en">Will you work with my accountant?</span><span data-l="es">¿Trabajas con mi contador?</span></summary><p><span data-l="en">Yes — and I recommend it. Strategies work better when they are coordinated with your accountant and lawyer.</span><span data-l="es">Sí, y lo recomiendo. Las estrategias funcionan mejor cuando se coordinan con tu contador y abogado.</span></p></details>
+      <details><summary><span data-l="en">What does the first session cost?</span><span data-l="es">¿Cuánto cuesta la primera sesión?</span></summary><p><span data-l="en">Nothing. It's a private 30-minute conversation about you and your goals.</span><span data-l="es">Nada. Son 30 minutos privados para hablar de ti y tus metas.</span></p></details>
+      <details><summary><span data-l="en">Why do you ask about residency status?</span><span data-l="es">¿Por qué preguntas por mi estatus migratorio?</span></summary><p><span data-l="en">Some insurance products require it. Asking first means I only book sessions when I can truly help — and give you a useful playbook if not yet.</span><span data-l="es">Algunos productos de seguros lo requieren. Preguntar primero me permite agendar solo cuando realmente puedo ayudarte, y darte una guía útil si todavía no.</span></p></details>
+      <details><summary><span data-l="en">Can we meet in Spanish?</span><span data-l="es">¿Podemos reunirnos en español?</span></summary><p><span data-l="en">Absolutely — every session is available in English or Spanish.</span><span data-l="es">¡Claro! Todas las sesiones pueden ser en español o inglés.</span></p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA BAND ================= -->
+<section class="cta-band">
+  <div class="orb a" style="top:-260px;right:20%"></div><div class="orb b" style="bottom:-300px;left:30%"></div>
+  <div class="wrap rv">
+    <span class="eyebrow"><span data-l="en">Your next move</span><span data-l="es">Tu siguiente paso</span></span>
+    <h2><span data-l="en">The best time to plan <br>was yesterday. <em class="gold-text">The next is today.</em></span><span data-l="es">El mejor momento para planear <br>fue ayer. <em class="gold-text">El siguiente es hoy.</em></span></h2>
+    <a href="#start" class="btn" style="margin-top:20px"><span data-l="en">Book a private session</span><span data-l="es">Agenda tu sesión privada</span><span class="arr">→</span></a>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <div class="logo" style="color:var(--text)">Valentina España<small><span data-l="en">Financial Professional</span><span data-l="es">Profesional Financiera</span></small></div>
+        <p style="margin-top:18px;max-width:340px"><span data-l="en">Wealth strategies for business owners, professionals and families in Canada.</span><span data-l="es">Estrategias patrimoniales para empresarios, profesionales y familias en Canadá.</span></p>
+      </div>
+      <div>
+        <h4><span data-l="en">Explore</span><span data-l="es">Explora</span></h4>
+        <ul>
+          <li><a href="#strategies"><span data-l="en">Strategies</span><span data-l="es">Estrategias</span></a></li>
+          <li><a href="#calculator"><span data-l="en">Calculator</span><span data-l="es">Calculadora</span></a></li>
+          <li><a href="#refer"><span data-l="en">Refer someone</span><span data-l="es">Recomienda a alguien</span></a></li>
+        </ul>
+      </div>
+      <div>
+        <h4><span data-l="en">Contact</span><span data-l="es">Contacto</span></h4>
+          <ul><li><a href="mailto:valentinaespanya.finance@gmail.com">valentinaespanya.finance@gmail.com</a></li><li><a href="https://www.linkedin.com/in/valentina-espana-agudelo/" target="_blank" rel="noopener">LinkedIn · Valentina España</a></li></ul>
+      </div>
+    </div>
+    <!-- REPLACE: final disclaimer approved by compliance -->
+    <div class="disclaimer">
+      <p><span data-l="en">© <span class="year"></span> Valentina España. Licensed life insurance agent in Alberta, British Columbia and Ontario. Content is for educational purposes only and is not tax, legal or investment advice. Insurance products are subject to underwriting and the terms of each policy. Tax figures are approximate, vary by province and change over time; strategies depend on individual circumstances and involve risks. Always consult your accountant and lawyer before implementing any strategy. Calculator results are hypothetical illustrations, not guarantees.</span><span data-l="es">© <span class="year"></span> Valentina España. Agente de seguros de vida con licencia en Alberta, Columbia Británica y Ontario. El contenido es solo educativo y no constituye asesoría fiscal, legal ni de inversión. Los seguros están sujetos a aprobación de la aseguradora y a los términos de cada póliza. Las cifras fiscales son aproximadas, varían por provincia y cambian con el tiempo; las estrategias dependen de cada situación e implican riesgos. Consulta siempre a tu contador y abogado antes de implementar cualquier estrategia. Los resultados de la calculadora son ilustraciones hipotéticas, no garantías.</span></p>
+      <details id="privacy" style="margin-top:10px"><summary style="cursor:pointer"><span data-l="en">Privacy Policy</span><span data-l="es">Política de Privacidad</span></summary>
+        <p style="margin-top:8px"><span data-l="en">I collect only the information you choose to send me (name, contact details and your answers) so I can reply to your request and prepare our meeting. It is stored securely and used only for that purpose. I never sell your information. It is shared only with insurance companies when you apply for coverage, or when the law requires it. You can ask to see, correct or delete your information, or stop receiving messages, at any time by writing to <a href="mailto:valentinaespanya.finance@gmail.com">valentinaespanya.finance@gmail.com</a>. This follows Canada's privacy law (PIPEDA) and anti-spam law (CASL).</span><span data-l="es">Solo recopilo la información que tú decides enviarme (nombre, datos de contacto y tus respuestas) para responder a tu solicitud y preparar nuestra reunión. Se guarda de forma segura y se usa solo para eso. Nunca vendo tu información. Solo se comparte con aseguradoras cuando solicitas una cobertura, o cuando la ley lo exige. Puedes pedir ver, corregir o borrar tu información, o dejar de recibir mensajes, en cualquier momento escribiendo a <a href="mailto:valentinaespanya.finance@gmail.com">valentinaespanya.finance@gmail.com</a>. Esto sigue la ley de privacidad de Canadá (PIPEDA) y la ley antispam (CASL).</span></p>
+      </details>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
